@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Budget Tracker</h1>
+    <div class="balance">
+      <h2>Balance: <span id="balance">₱0</span></h2>
+    </div>
+
+    <form id="transaction-form">
+      <input type="text" id="text" placeholder="Enter description" required />
+      <input type="number" id="amount" placeholder="Enter amount" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Add</button>
+    </form>
+
+    <h3>📋 Transaction History</h3>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
